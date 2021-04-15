@@ -12,7 +12,35 @@
 </head>
 
 <body>
+    <header>
+        <nav class="navbar navbar-expand-sm sticky-top" style="background-color: rgb(63, 2, 2);">
+            <h2 style="color: white;">Blog Posts</h2>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="" style="color: white;">Homepage</a>
+                </li>
+                {{#if logged_in}}
+                <li class="nav-item">
+                    <a class="nav-link" href="" style="color: white;">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a id="logout" class="nav-link" href="/login" style="color: white;">Logout</a>
+                </li>
+                {{else}}
+                <li class="nav-item">
+                    <a id="login" class="nav-link" href="/login" style="color: white;">Login</a>
+                </li>
+                {{/if}}
+            </ul>
+        </nav>
+    </header>
+    <main class="container container-fluid mt-5">
+        {{{ body }}}
+    </main>
+    <footer>
 
+    </footer>
+    <script src="/js/logout.js"></script>
 </body>
 
 </html>

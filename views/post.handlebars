@@ -1,0 +1,44 @@
+{{#if posts.id}}
+
+<div class="container post-container mt-5 rounded shadow-sm">
+    <div class="row">
+        <h2 class="post-title">{{posts.title}}</h2>
+    </div>
+    <div class="row">
+        <p class="post-body">{{posts.body}}</p>
+    </div>
+</div>
+
+<div class="container mt-4">
+    <form class="form comment-form">
+        <div class="form-group justify-content-around">
+            <label for="comment-field">Leave comment:</label><br>
+            <textarea class="body-input m-1 rounded" rows="2" id="comment-field"></textarea>
+        </div>
+        <div class="form-group">
+            <button class="btn btn-primary m-1" type="submit">Comment</button>
+        </div>
+    </form>
+</div>
+
+<br>
+
+<div class="comments-feed">
+    <h4 class="comment-header text-center mb-4">Comments</h4>
+    {{#each posts.Comments as |comment|}}
+    <div class="container">
+        <div class="row comment-row py-3">
+            <div class="col">
+                <p>{{comment.User.username}}: {{comment.comment}}</p>
+            </div>
+            <br>
+        </div>
+    </div>
+
+    {{/each}}
+</div>
+
+
+{{/if}}
+
+<script src="/js/posts.js"></script>

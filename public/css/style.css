@@ -1,0 +1,120 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  background-color: #570b0b;
+}
+
+.brand,
+.nav-link:hover,
+.subheader,
+.navbar-toggler-icon {
+  color: #21b3b8;
+}
+
+@media screen and (min-width: 992px) {
+  .navbar-login {
+    margin-left: 5px;
+  }
+}
+
+.nav-link {
+  color: #5ffa51;
+  font-size: 16pt;
+}
+
+.btn {
+  background-color: #21b3b8;
+  border: none;
+}
+
+.btn:hover {
+  background-color: #5ffa51;
+  color: #214eb8;
+  border: none;
+}
+
+.card {
+  width: 100%;
+  margin-left: 50%;
+  background-color: #f1feff;
+}
+
+.card-title,
+.post-title {
+  text-decoration: none;
+  font-size: 20pt;
+  color: #5ffa51;
+}
+
+.modal-title {
+  color: #5ffa51;
+}
+
+.card-title:hover,
+.comment-header {
+  color: #21b3b8;
+}
+
+.card-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.author {
+  text-align: end;
+  font-size: 10pt;
+  color: #21b3b8;
+}
+
+input,
+textarea {
+  width: 65%;
+}
+
+.create-post-btn {
+  background-color: #c2740e;
+  color: #b9b5b5;
+  border: solid 2px #020707;
+  margin-left: 69%;
+}
+
+.post-container {
+  border: solid 1px #bbfcff;
+  background-color: #f1feff;
+  width: 65%;
+  padding: 15px;
+}
+
+.comment-form {
+  margin-left: 12%;
+  width: 110%;
+}
+
+.comment-row {
+  border-top: solid 1px #bbbbbb;
+  width: 75%;
+  margin-left: 12%;
+}
+
+@media screen and (max-width: 770px) {
+  .card {
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .banner-header {
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .post-container {
+    width: auto;
+  }
+}

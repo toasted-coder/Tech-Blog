@@ -1,0 +1,47 @@
+<button class="create-post-btn mt-4 rounded" aria-current="page" data-bs-toggle="modal" href="#modal" role="button"><i
+        class="far fa-plus-square"></i> Create Post</button>
+
+{{!-- Create new post modal --}}
+<div class="modal fade" id="modal" aria-hidden="true" aria-labelledby="..." tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="col-md-12 text-center m-3">
+                <h2 class="modal-title">Create a New Post</h2>
+                <form class="form new-post-form">
+                    <div class="form-group">
+                        <label for="post-title">Title:</label><br>
+                        <input class="title-input m-1" rows="3" id="post-title" />
+                    </div>
+                    <div class="form-group">
+                        <label for="post-body">Body:</label><br>
+                        <textarea class="body-input m-1" rows="5" id="post-body"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-primary m-1" type="submit">Create</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+{{#if posts.length}}
+
+{{!-- List of all posts --}}
+<div class="col-md-6 posts-list mt-2">
+
+    {{#each posts as |post|}}
+    <div class="row mb-2 ">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <a class="card-title" href="./posts/{{post.id}}">{{post.title}}</a>
+                <p class="card-text">{{post.body}}</p>
+                <p class="author"><i>{{post.User.username}}</i></p>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</div>
+{{/if}}
+
+<script src="/js/posts.js"></script>

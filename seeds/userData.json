@@ -1,0 +1,23 @@
+[
+    {
+      "first_name": "Ricky",
+      "last_name": "Burnz",
+      "username": "Ryburnz",
+      "email": "bricky@gmail.com",
+      "password": "examplepw123"
+    },
+    {
+      "first_name": "Carl",
+      "last_name": "Leeson",
+      "username": "carlson",
+      "email": "carlson@gmail.com",
+      "password": "examplepw123"
+    },
+    {
+      "first_name": "Jimmy",
+      "last_name": "Gatz",
+      "username": "jgatz",
+      "email": "gatz@gmail.com",
+      "password": "examplepw123"
+    }
+]
